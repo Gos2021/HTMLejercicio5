@@ -1,0 +1,44 @@
+body {
+  background: radial-gradient(rgb(64, 4, 231), rgb(235, 8, 140));
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+.galeria {
+  width: 640px;
+  height: 490px;
+  margin: auto;
+  border: solid 5px black;
+  position: relative;
+  background-color: black;
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 2s;
+}
+
+.galeria input[type="radio"] {
+  position: relative;
+  top: 460px;
+  margin-left: 20px;
+}
+
+.galeria input[type="radio"]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+.galeria input[type="radio"]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+.galeria input[type="radio"]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+.galeria input[type="radio"]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
